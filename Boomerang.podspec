@@ -68,4 +68,11 @@ Pod::Spec.new do |spec|
   #    s.framework = "SwiftUI"
   #  end
 
+  spec.subspec "ReactiveSwift" do |s|
+    s.source_files = "Sources/Reactive/**/*{.swift}"
+    s.dependency "Boomerang/Core"
+    s.dependency "ReactiveSwift"
+    s.dependency "ReactiveCocoa"
+  end
+  
 end
